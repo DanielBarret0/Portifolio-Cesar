@@ -1,0 +1,148 @@
+.titulo__livro {
+    margin-top: 3em;
+}
+
+.livro-capa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 80%;
+    box-shadow: var(--text-shadow);
+}
+
+.descricao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    text-align: center;
+    margin: 1em 2em;
+}
+
+.descricao__caixa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    padding: 0.5em;
+
+    border: 2px solid var(--verde);
+    border-radius: 10px;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+
+.descricao__texto {
+    font-weight: 300;
+    font-size: 0.9em;
+}
+
+.descricao__destaque {
+    font-weight: 500;
+    
+}
+
+.lista__compras {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 1em;
+    margin-bottom: 4em;
+}
+
+.lista__compras-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+    text-decoration: none;
+    color: var(--branco);
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.listra__compras-imagem {
+    width: 50px;
+    height: 50px;
+}
+
+.botao-livros {
+    padding: 0.5em 0.5em;
+    border-radius: 20px;
+    background-color: var(--azul);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    margin: 0 auto;
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+    text-shadow: var(--text-shadow);
+}
+
+@media screen and (min-width: 768px) {
+    .livro-capa {
+        width: 50%;
+    }
+
+    .lista__compras {
+        display: flex;
+        gap: 2em;
+    }
+
+    .descricao {
+        margin: 1em 6em;
+    }
+
+
+}
+
+@media screen and (min-width: 1024px) {
+    .livro-capa {
+        width: 30%;
+    }
+
+    .lista__compras {
+        padding: 2em;
+    }
+
+
+}
+
+@media screen and (min-width: 1440px) {
+    .livro-capa {
+        width: 20%;
+    }
+
+    .lista__compras {
+        padding: 4em;
+    }
+
+    .descricao {
+        margin: 2em 30em;
+    }
+
+}
+
+@media screen and (min-width: 2000px) {
+    .livro-capa {
+        width: 15%;
+    }
+
+    .lista__compras {
+        padding: 4em;
+    }
+
+    .descricao {
+        margin: 2em 60em;
+    }
+}
